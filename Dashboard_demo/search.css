@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    background: url("bg.png") center/cover no-repeat fixed;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    padding: 0 32px;
+    background: rgba(30, 20, 60, 0.6);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.search {
+    margin-left: 25px;
+    width: 260px;
+    padding: 8px 14px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: rgba(255,255,255,0.9);
+}
+
+.top-left {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.top-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 14px;
+}
+
+.nav-links a:hover {
+    background: rgba(255,255,255,0.12);
+}
+
+.search-container {
+    padding: 50px 80px;
+}
+.result-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   background: rgba(255,255,255,0.9);
+    color: #222;
+    padding: 20px 28px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.result-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
+}
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 18px;
+    object-fit: cover;
+}
+.user-info h3 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.username {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #777;
+}
+
+.about {
+    margin: 4px 0 0;
+    font-size: 14px;
+    color: #444;
+}
+.add-btn {
+    padding: 12px 24px;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #ff8fcf, #7a86ff);
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.add-btn:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}

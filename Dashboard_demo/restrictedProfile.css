@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: url("bg.png") center/cover no-repeat fixed;
+    color: white;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    padding: 0 40px;
+    background: rgba(30, 20, 60, 0.6);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 14px;
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    background: linear-gradient(135deg, #ff9ad5, #b98bfd);
+}
+.profile-card {
+    max-width: 650px; 
+    height: 300px;            
+    padding: 40px 45px;
+    border-radius: 30px;
+    backdrop-filter: blur(25px);  
+    background: rgba(30, 20, 60, 0.8);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+    display: flex;             
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    margin: 120px auto;           
+    position: relative;        
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 30px 70px rgba(0,0,0,0.7);
+}
+.profile-card .back-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+
+.profile-card .back-btn:hover {
+    color: #ff9ad5;
+    transform: scale(1.2);
+}
+
+.profile-card img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgba(255,255,255,0.3);
+    flex-shrink: 0;
+}
+
+.profile-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-info h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #fff;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+.profile-info p.friends {
+    font-size: 15px;
+    opacity: 0.85;
+    margin-bottom: 18px;
+}
+.profile-info p.about {
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.9;
+    margin-bottom: 25px;
+}
+.profile-info .btn-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.profile-info .btn {
+    padding: 12px 26px;
+    border-radius: 22px;
+    background: linear-gradient(111deg, #ff9ad5, #b98bfd);
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.profile-info .btn:hover {
+    transform: scale(1.05);
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
